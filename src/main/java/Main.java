@@ -8,7 +8,9 @@ public class Main {
     static void main() {
 
         //Cadena de conexión con la BBDD
-        String uri = "mongodb+srv://paworo06:uTa6FNYP3riMZ4Ah@mongodb.5zftvyh.mongodb.net/?retryWrites=true&w=majority";
+
+        //Hay que cambiar la URL, no pongo la mía porque cualquiera puede acceder a mi BBDD al subirlo a GitHub
+        String uri = "mongodb+srv://USUARIO:PASSWORD@CLUSTER_URL/?retryWrites=true&w=majority";
 
         //Creación del cliente
         try (MongoClient client = MongoClients.create(uri)) {
